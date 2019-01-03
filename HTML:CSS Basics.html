@@ -1,0 +1,348 @@
+
+<!--
+HTML/CSS - BASICS
+
+HTML STRUCTURE PART 1
+
+1)  <tag>content</tag>
+
+	▪	 There are many tags in HTML and each one represents different type of elements.
+	▪	 Between the opening and closing tag comes the content. The content is the stuff that people will see in the browser.
+	▪	Notice below that the images do not have a closing tag. Its a special one.
+
+
+Here are a few tags:
+	•	<p> This is a paragraph. </p>
+	•	<h1> This is a heading. </h1>
+	•	<span> This is a span. </span>
+	•	<img src=“image.jpg” alt=“a picture” >
+	•	<em> em stands for emphasis which makes texts italic </em>
+	•	<strong> stands for bold </strong>
+Every type of element display’s differently on the web .
+
+Writing comments:
+<!—
+This is a comment. Note the special tags. Comments are useful for leaving notes for ourselves or for other people to read.
+—>
+
+Exercise 1:
+
+Make three elements:
+* one paragraph
+* two spans
+Make sure to put some text content in every element!
+<tag>content</tag> is an example element
+
+
+Solution:
+<p> Hey, I’m Hetansh </p>
+<span> I love soccer </span>
+<span> and I’m learning web dev </span>
+
+
+Inheritance:
+<div> content </div>
+	▪	Elements can go inside other elements.
+	▪	Contents isn’t just text, it can contain elements as well .
+
+Example:
+<div> <h1> Article Title </h1> <p> paragraph of text </p> </div>
+
+Here: <div> is the parent and <h1> and <p> are the children. It is often represented as a tree.
+
+This can also be written as (more clearly):
+<div>
+	<h1> Article Title </h1>
+	<p> Paragraph of text. </p>
+</div>
+
+HTML STRUCTURE PART 2
+
+<! DOCTYPE html>
+<html>
+	<head>
+		<meta charset=“utf-a”>
+		<title> HTML Structure </title>
+	</head>
+	<body>
+		<h1> This is a heading. </h1>
+	</body>
+</html>
+
+	▪	We know the above code just displays the heading: “This is a heading”
+	▪	However, we must follow a standard method of web developing
+
+Every HTML document we create or load is derived from the above mentioned basic format (template).
+The template does not only say what should be displayed, but also includes relevant information that tells the browser how to display it.
+
+	▪	DOCTYPE: describes the type of HTML. While there are technically different types, for 99.999% of the HTML that we write,
+             we’ll be fine with <! DOCTYPE html>
+	▪	<head>: describes the meta information (metadata) about the site, such as the title, and provides links to scripts
+            and stylesheets the site needs to render and behave correctly.
+	▪	<body>: describes the actual content of the site that the users will see.
+
+Metadata contains information about the page/site. This includes information about styles,
+scripts and data to help software (search engines, browsers, etc) use and render the page.
+
+HTML DOCUMENTS IN DEPTH
+
+	✓	An HTML document will usually start with a type declaration (which is not a tag, so it should not have a closing tag).
+    The declaration helps the browser determine what type of HTML document it’s trying to parse and display.
+
+	Older Example:
+	<!DOCTYPE HTML PUBLIC =-//W3C//DTD HTML 4.01//EN” “http://www.w3.org/TR/html4/strict.dtd”>
+	(Triggers Standards mode but specifies an older form of validation.)
+
+	Maybe we didn’t see a doctype at all?
+	<html>
+	….
+	</html>
+	(Triggers “Quirks” mpde. This is bad)
+
+	Newer Websites:
+	<!DOCTYPE html>
+	(Triggers standards mode with all updated features.)
+
+	Browsers look for this doctype declaration to determine which rendering mode to use to render the site.
+  Generally, 	newer sites follow standard HTML specifications. The current standard HTML specification is called HTML5.
+
+	✓	<html> tag, which tells the browser that everything enclosed inside the
+  <html>
+   …. . .. . .
+   </html>
+   should be parsed as HTML.
+
+   Then we have two main sections of the HTML document:
+	<head> and <body>
+
+	✓	<head> and <body>  :
+	⁃	The <head> will contain general information and metadata about the page, while
+    the <body> will contain the contents that will be displayed on the page.
+	⁃	The <body is always visible.
+	⁃	The <head>  is never visible, but the information in it describes the page and links to other files the browser
+  needs to render the website correctly.
+
+  The head is responsible for:
+
+			I) The document’s title (the text that shows up in browser tabs):
+				<title> about me </title>
+			The above tag will define the title of the document and will be displayed in the tab of the browser window
+      when a user visits the page
+
+     ii) Associated CSS file (for style)
+				<link rel= “stylesheet”
+				type = “text/css”
+				href= “style.css”>
+
+		iii) Associated JavaScript files (multipurpose scrips to change rendering and behavior)
+				<script src=“animations.js”>
+				</script>
+
+		iv) Charset being used (the text’s encoding):
+				<meta charset-“utf-8”>
+			The above tag is pretty standard, and allows our website to display any Unicode character.
+
+		v) Keywords, authors and descriptions(often useful for SEO):
+				<meta name = “description”
+				content = “This is what my website is all about!”>
+
+✓	HTML Validators
+	Analyze the website and verify that we’re writing valid HTML.
+
+*) MAKE A BUTTON ELEMENT
+    A button element represents a clickable button, which can be used in forms
+    or anywhere in a document that needs simple, standard button functionality.
+
+    Syntax: <button> Text </button>
+
+    Learn more: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button
+
+*) Hyperlinks
+  <a href="https://www.google.com">Google</a>
+
+
+  -->
+
+<! DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title> HTML/CSS </title>
+
+  </head>
+  <!-- Head contains the meta data -->
+
+  <body>
+
+    <h1> Basics of HTML and CSS </h1>
+    <!--
+    <h2> This is heading 2 </h2>
+    <h3> This is heading 3 </h3>
+    <h4> This is heading 4 </h4>
+    -->
+<!-- Using the above header tags, we can classify information based on importance -->
+<p> Headers are a great way to visually break up
+    the web page, as well as to indicate the relative
+    importance of various elements </p>
+
+    <h2> Unordered and Ordered Lists </h2>
+    <p> An unordered list usually displays list items with bullet points </p>
+    <ul>  <!-- Syntax of Unordered list -->
+      <li> ABC </li>
+      <li> DEF </li>  <!-- <li> represents an item in the list -->
+      <li> GHI </li>
+    </ul>
+
+    <p> An ordered list is displays list items with an ascending counter on the left,
+        such as a number or letter</p>
+    <ol>  <!-- Syntax of Ordered list -->
+      <li> ABC </li>
+      <li> DEF </li>
+      <li> GHI </li>
+    </ol>
+
+<!-- Tree to HTML
+    *) Add an <h1> tag with some content
+    *) Add a <div> tag.
+    *) Add two paragraph tags a child elements to the <div>
+-->
+    <h2> Tree Structures / Inheritance </h2>
+
+    <div>
+      <p> We now use the tree structures to organize our HTML document
+          into meaningful sections </p>
+      <p> This is helpful for readability and to provide a consistent
+          structure for styling and programmatic control with CSS and
+          JavaScript </p>
+    </div>
+
+    <h2> Button Element </h2>
+    <button> Button 1 </button>
+
+    <h2> Hyperlinks </h2>
+    <p> The power of the web is that pages can lead to other pages.
+        When we click a link on a web page, it takes us to another page.
+        This link is called a
+        <strong> hyperlink </strong>
+    <p> Hyperlinks are created using anchor elements, which generally look like: </p>
+
+    <a href="https://www.google.com">Google</a>
+    <span> This is the hyperlink leading to google's homepage </span>
+
+    <p> Inside the opening a tag there is href, which stands for "reference".
+        This is called an <strong> attribute </strong> .
+        Attributes like href describe the properties of HTML elements.
+        In this case, the href attribute is the target URL that the link will open.
+        The content inside the anchor element is the text that users see displayed
+        on the page.
+    </p>
+    <p> Syntax for making hyperlinks : </p>
+    <ul>
+      <li> There is a space between a and href </li>
+      <li> There are no spaces aroung the = </li>
+      <li> The website has two " around it </li>
+      <li> There are no spaces between the href attribute and the opening tag </li>
+    </ul>
+
+    <h2> Images </h2>
+
+    <p> An image element does not need a closing tag (also called void elements) </p>
+
+    <p> The source attribute, src, is like the href of a link - it is the URL of the
+        image we want to display.
+        For now, our images will need to be hosted online, which means that the URL
+        will need to start with http:// or https://.
+        The alt attribute stands for "alternative description", which is important
+        for people who use screen readers to browse the web. This is the text that will
+        show up lieu of the actual image.
+    </p>
+
+    <figure>
+      <p> Image of a puppy </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/St._Bernard_puppy.jpg"
+           alt="Puppy Image" >
+        <figcaption>Puppy Image by dbking(originally posted to Flickr as 272_7242)
+            CC BY 2.0, via Wikimedia Commons
+            <a href="https://upload.wikimedia.org/wikipedia/commons/7/71/St._Bernard_puppy.jpg">Source</a>
+        </figcaption>
+
+      <p> Udacity Logo: </p>
+      <img src="http://udacity.github.io/fend/images/udacity.png"
+           alt"=udacitylogo">
+        <figcaption> Udacity Logo
+           <a href="http://udacity.github.io/fend/images/udacity.png">Source</a>
+        </figcaption>
+    </figure>
+
+
+    <h2> A Guide to Paths </h2>
+
+    <p> In order to display a local image, we need to be able to write a path </p>
+    <span> A path is a way of describing where a file is stored </span>
+
+    <p> As a web developer, we need to consider two essential domains for paths: </p>
+        <ol>
+          <li> Paths to find files on your computer, <strong> local </strong> files </li>
+          <li> Paths to find files on other computers, <strong> external </strong> files </li>
+        </ol>
+
+    <h3> Local Paths </h3>
+    <p> Computers have folders (also called "directories"). Operating systems like Windows,
+        Mac and Linux organize all of the files into a tree of directories called a
+        <strong> file system </strong>.
+        There's a top-most directory, often called the <strong> root </strong>, that
+        contains all of the other directories.
+        Within the root, there are files and directories. Withing those directories are
+        more files and directories and so on.
+    </p>
+
+    <p> Every file has an address, which we call the "path". An absolute path is written
+        in relation to the computer's root directory.
+        For instance, a file in the Documents folder on a Mac has a path that looks like:
+        "/Users/Hetansh/Documents/file.txt"
+    </p>
+
+    <p> file.txt is stored inside Documents/.
+        Users/, Hetansh/ and Documents/ are all names of directories.
+        Documents/ lives inside Hetansh/ and Hetansh/ lives inside Users/.
+        Users/ is inside the root directory, which is represented by the first "/".
+        The rest of the "/" are used to separate directories.
+    </p>
+
+    <p> When we open an HTML file in the browser, we're seeing the absolute path to the
+        file on the computer. </p>
+    <span> file:///Users/hetanshmehta/Desktop/HTML:CSS%20Basics.html </span>
+    <p> file:// is called the protocol and the rest is the absolute path to index.html.
+        This URL will only work for you on your computer. As no one else has your file system,
+        this URL is unique to your computer.
+
+    <h3> External Paths </h3>
+    <p> The process of leading a website from a URL like https://www.google.com
+        mimics opening an HTML file that is saved on the computer. Every Website
+        starts with an HTML file. It just so happens that when we visit a website,
+        the HTML file that we want to open lives on a different computer.
+        The computer responsible for giving the website's files is called a
+        <strong> server </strong>
+      </p>
+
+    <p> Pointing your browser to hrrps://www.google.com sends a request to
+        Google's server for the HTML file (and others) that your computer needs
+        to load the Google website.
+        We can think of google.com as the root path of google/s server (computer)
+        that anyone can access.
+        The google server exposes the files to the web, which means that they
+        make them available to anyone who wants them.
+        Servers have <strong> external path </strong> that anyone can access and is the reason why the web works.
+      </p>
+
+    <p> There are different <strong> protocols </strong> for serving files,
+        the most common of which on the web are HTTP and HTTPS.
+        Opening the file on your own computer uses the FILE protocol.
+    </p>
+
+
+
+  </body>
+</html>
