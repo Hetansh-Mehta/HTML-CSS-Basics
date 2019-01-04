@@ -1,0 +1,114 @@
+<!-- CSS Basics -->
+<!-- References:
+     1) Introduction to HTML and CSS Course - Udacity
+     Note: The theory and the examples are to be used for learning purposes only.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">"
+    <title> CSS BASICS </title>
+    <style>
+      /* This is a CSS comment (keep syntax in mind) */
+      p {
+        background-color: yellow;     /* selects all p tags and colors its background yellow */
+        color: blue;                  /* selects all p tags and colors them blue */
+        text-align: left;            /* selects all p tags and aligns them towards right */
+
+      }
+      h1 {                /* selects all h1 tags and colors them green */
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1> CSS Basics </h1>
+
+
+
+    <ul>
+
+      <li> <p> CSS: Cascading Syle Sheets is the markup language that we use to
+               describe how elements on website look.
+               It gives us the ability to change the way elements look.
+          </p>
+      </li>
+
+      <li> <p> Things that can be controlled: </p>
+            <ol>
+              <li> Colour </li>
+              <li> Font </li>
+              <li> Spacing </li>
+              <li> Layout </li>
+            </ol>
+      </li>
+
+      <li> <p> It lets us separate the description of the content we want on
+               the page (HTML) from the description of how we want the content
+               to look on the page (CSS).
+               Literally all the code that makes the page loog the way it does,
+               is separate from the text, images, and content that is on the page.
+           </p>
+      </li>
+
+    </ul>
+
+
+    <h2> CSS RULESETS </h2
+
+      <h3> TAGS </h3>
+
+      <p> A sample ruleset: </p>
+      <span> div{ </span>
+      <span>  text-align: right; </span>
+      <span> }
+
+
+      <ul>
+        <li> <p> A ruleset is made up of two parts: </p>
+          <ol>
+            <li> <strong> A Selector (div): </strong> which is the code that
+                selects the HTML elements you want to style. </li>
+            <li> <strong> Declaration block { #statements }: </strong>
+                 which is the code that describes the styles you want to apply
+                 to said HTML. Declarations are the lines of code written
+                 inside the curly braces.</li>
+          </ol>
+        </li>
+
+        <li> <p> The head contains the meta-data of the page. Style is one of
+                 the pieces of information that goes inside the head.
+                 Anything that goes inside the style tags is CSS.
+             </p>
+        </li>
+
+        <li> <p> Let us consider the set: p { colour: blue; } </p>
+             <ul>
+               <li> <em> <strong> p (tag selector) </strong> </em> is telling the browser
+                    to select all the <em> <strong> p </strong> </em> tags,
+                    or paragraph tags of the page.
+               </li>
+               <li> <em> <strong> {colour: blue;} (declaration) </strong> <em>
+                    colour is the property we wanna change and blue is the value
+                    we pass to it.
+
+               </li>
+               <li> The value describes how the browser should render the
+                    property for the element. Properties are always written
+                    in plain English. And they identify a feature of an HTML
+                    element that we want to change.
+               </li>
+
+          <li> <p> NOTE THAT using p{} tag selector, we can only select ALL the
+               paragraph tags. To specifically select a paragraph, we use attributes.
+               </p>
+          </li>
+      </ul>
+
+
+
+
+
+  </body>
+</html>
