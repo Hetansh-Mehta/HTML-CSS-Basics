@@ -1,0 +1,159 @@
+<!-- CSS Attributes -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Soccer Players </title>
+  <style>
+    /* Using tag selectors, we can only select ALL the paragraph tags */
+    h2{
+      color: green;
+    }
+    /* Style Site description differently from Player Summaries */
+
+    /* In order to select an HTML element with the class attribute: */
+    .player-summary{
+      color: blue;
+    }
+    /* In order to select an HTML element with an id-attribute: */
+    #site-description{
+      color: red;
+    }
+
+    .first{
+      background-color: pink;
+      color:green;
+      width: 600px;
+      height: 100px;
+    }
+
+    .second{
+      margin: 1em;
+      font-size: 1em;
+    }
+
+  </style>
+</head>
+<body>
+  <h1> My Favourite Soccer Players </h1>
+  <!-- Site Description -->
+  <p id="site-description">I've listed a few of my favourite soccer players below. </p>
+
+  <hr>
+  <!-- Summaries of Players -->
+  <h2> Lionel Messi </h2>
+  <p class="player-summary">Lionel Messi is an Argentine professional footballer who plays as a
+       forward and captains both Barcelona and the Argentina national team.
+       Often considered the best player in the world and regarded by many
+       as one of the greatest players of all time, Messi has won a
+       recordtying five Ballon d'Or awards, four of which he won consecutively,
+       and a record five European Golden Shoes.
+       <a href="https://en.wikipedia.org/wiki/Lionel_Messi">Wikipedia Source</a>
+  </p>
+
+  <h2> Andres Iniesta </h2>
+    <p class="player-summary">Andres Iniesta is a Spanish professional footballer who plays
+        as a central midfielder for Japanese club Vissel Kobe.
+        He spent most of his career at Barcelona, where he served as
+        the captain for three seasons. Iniesta is widely considered to be
+        one of the best players of his generation and one of the greatest
+        midfielders of all time.
+        <a href="https://en.wikipedia.org/wiki/Andrés_Iniesta">Wikipedia Source </a>
+    </p>
+
+    <h2> Ousmane Dembele </h2>
+    <p class="player-summary"> Ousmane Dembele is a French professional footballer who plays as
+        a forward for Spanish club Barcelona and the French national team.
+        Dembélé made his senior international debut for France in 2016.
+        He was chosen in France's squad for the 2018 World Cup which they won.
+        <a href="https://en.wikipedia.org/wiki/Ousmane_Dembélé">Wikipedia Source </a>
+    </p>
+
+    <hr>
+
+    <h2> Attributes Used </h2>
+    <p> Attributes used are: </p>
+    <ol>
+      <li> id="site-description" </li>
+      <li> class="player-summary" </li>
+    </ol>
+
+    <p> Attributes are very important as they: </p>
+    <ul>
+      <li> Help us describe the content of the page inside the HTML markup.
+    </ul>
+
+    <p class="first"> <strong> NOTE: </strong> IDs should be used sparingly as an HTML
+        element can have only one ID and IDs can be used once a page.
+        <strong> ALSO </strong> If you want to add the same attribute
+        to multiple HTML elements, use classes.
+        Classes can be added to multiple HTML element and an HTML element
+        can have multiple classes.
+        class="highlight module player-summary" is basically assigning 3
+        different classes to the element. This also works (order doesn't matter).
+    </p>
+
+    <hr>
+
+    <h2> CSS Units of Measurement </h2>
+
+    <p class="second"> In CSS, we use units like pixels and percentages for measurement.
+        Furthermore, Units can be categorised into two parts:
+    </p>
+
+    <ul>
+      <li> <strong> Absolute Units </strong> <p> Units that refer to fixed
+           units of measurement.
+           Example: pixels, mm, in, cm </p>
+      </li>
+
+      <li> <strong> Relative Units </strong> <p> Units that are a comparison
+           to another linked property.
+           Example: percentages, em, vw (viewport width), vh(viewport height) </p>
+      </li>
+
+      <li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length">
+           Full list of units</a>
+      </li>
+    </ul>
+
+    <!-- .sidebar{                      The property width is being passed
+              width: 400px;             the value of 400 pixels
+          }
+  }-->
+
+    <h2> Adding Color to Websites </h2>
+
+    <p> While writing CSS, we express color by specifying the amount of
+        red, green, and blue light that should be present. This can be done
+        in two ways: </p>
+    <ol>
+      <li> <p> <strong> RGB </strong> Each amount of red, green and blue
+           light is written as a decimal number between 0 and 255.
+           0 being the lowest value or no presence of light and 255 being
+           the highest value or 100% presence of the light. </p>
+
+           <p>Example: body{
+                      background-color: rgb(255,0,255);
+                    }</p>
+            <p> This will change the background color to magenta. </p>
+       </li>
+
+       <li> <p> <strong> Hexadecimal or hex </strong> Each amount of red, green,
+            and blue light is written as a hexadecimal number between the
+            values 00 and FF.
+            00, which is just 0 in decimal, and FF, which is just 255 in decimal
+            </p>
+
+            <p> Example: body{
+                            background-color: #ff00ff
+                         }
+            </p>
+            <p> The # sign tells the browser that hexadecimal is being used. </p>
+       </li>
+         
+    </ol>
+
+</body>
+</html>
