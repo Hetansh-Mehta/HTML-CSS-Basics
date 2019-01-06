@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" >
+  <title> CSS Styles </title>
+  <style>
+    .kitten-image{
+      border: 5px dashed salmon;          /* border-width: 1px;
+                                             border-style: dashed;
+                                             border-color: salmon*/
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 5px 5px 20px #ccc;
+      /* A box shadow is described by X and Y offsets relative to the element
+         relative to the element, blur and spread radii, and color
+         box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+                     offset-x| offset-y| blur-radius| spread-radius| color
+      */
+    }
+    .header1{
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 40px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: blue;
+    }
+    .header2{
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 25px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: green;
+    }
+    .header3{
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: red
+    }
+    #menu{
+      text-align: center;
+    }
+    .item{
+      color: red;
+    }
+    .picture{
+      width: 50%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .description{
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1 class="header1"> CSS Styles </h1>
+    <p id="doc-para"> This file covers the problem set of CSS </p>
+  </div>
+  <hr>
+  <div>
+    <h2 class="header2"> Styling an Image </h2>
+    <p> We will use the properties for border, cursor, and box-shadow to
+        style the image </p>
+
+    <ul>
+      <li>
+        <h3 class="header3"> Border </h3>
+        <p> There are many different options for customizing borders
+            like style, width and color!
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">
+              Learn More</a>
+        </p>
+        <p> Borders like solid, dashed, dotted, double, groove, rigid, inset,
+             outset and hidden can be achieved with CSS
+        </p>
+      </li>
+
+      <li>
+        <h3 class="header3"> Cursor </h3>
+        <p> Changing the cursor can be extremely helpful when trying to
+            communicate things to the user. For example, if a user hovers
+            over a link, changing the cursor to a pointer let's the user know
+            the link can be clicked.
+        </p>
+      </li>
+
+      <li>
+        <h3 class="header3"> Box-Shadow </h3>
+        <p> The box-shadow property is relatively new to the world of CSS.
+            We can use it to add a shadow to an element.
+            <a href="https://www.cssmatic.com/box-shadow">
+              Box-Shadow Generator from CSSmatic </a>
+        </p>
+      </li>
+    </ul>
+
+  <p> Now we style the following kitten image: </p>
+    <figure>
+      <img src="http://udacity.github.io/fend/lessons/L3/problem-set/02-style-an-image/kitten.jpg"
+           alt="kitten" class="kitten-image">
+        <figcaption> Image credit: Nicolas Suzor - via Flickr, Creative Commons
+            <a href="https://www.flickr.com/photos/nicsuzor/">Source</a>
+        </figcaption>
+    </figure>
+  </div>
+  <hr>
+  <div>
+    <h2 class="header2"> Styling the Font </h2>
+    <p> We will use the properties of font and text to style the fonts </p>
+
+    <ul>
+      <li>
+        <h3 class="header3"> Fonts </h3>
+        <p> When using fonts on the web, we must first consider what fonts are
+            available to our users. Every operating sustem comes with a set of
+            pre-installed fonts that we can use to customize the website.
+            For a complete list of "web-safe" fonts, follow this
+            <a href="https://www.cssfontstack.com"> link </a>
+        </p>
+        <p> The way it works is simple. When using the <em> font-family </em>
+            property, we should specify the font(s) we want to use in the HTML.
+        </p>
+        <p> Syntax:
+            <strong><em> font-family: font1, font2, font3, ...; </em></strong>
+        </p>
+        <p> Then the browser, starting from left to right, looks at the font(s) we've
+            specified and checks to see if it can render the text using the fonts.
+            If it can't use the first font, then the browser moves to the next font, and so on.
+        </p>
+        <p> The purpose of specifying multiple fonts is because not all fonts are
+            available on veery operating system. So, specifying multiply, similar
+            fonts ensures users have a consistent experience regardless of the
+            operating system they are using.
+        </p>
+      </li>
+
+      <li>
+        <h3 class="header3"> Custom Fonts </h3>
+        <p> It is also possible to use custom fonts on the web. Check out
+            <a href="https://fonts.google.com"> Google Fonts </a>
+            to see some open-source web fonts.
+        </p>
+      </li>
+    </ul>
+
+    <p> Now we style the headings of our website. </p>
+  </div>
+  <hr>
+  <div>
+    <h2 class="header2"> Writing Selectors </h2>
+    <p> Every CSS statement is made up of a <strong> selector </strong>
+        and a <strong> declaration block </strong>.
+        The selector tells the browser what HTML element we want to style
+        and the declaration block tells that browser what styles need to
+        be abpplied to that HTML
+    </p>
+
+    <div id="menu">
+      <h1 class="item"> Chicken Clay Pot </h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Claypot_Chicken_Rice%2C_Singapore.JPG"
+           alt="Chicken Clay Pot" class="picture">
+           <figcaption> Chicken Clay Pot
+             <a href="https://en.wikipedia.org/wiki/Claypot_chicken_rice#/media/File:Claypot_Chicken_Rice,_Singapore.JPG">
+                Wikipedia Source </a>
+           </figcaption>
+      <p class="description"> Singapore style Claybot chicken rice with sliced
+         chicken, salted fish, Chinese sausage and vegetables.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
