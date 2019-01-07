@@ -1,0 +1,18 @@
+/* This file contains only CSS for the HTML: CSS-Stylesheets.html */
+.header1{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: blue;
+}
+.header2{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: green;
+}
+.body{
+  font-family: Arial, sans-serif;
+}
